@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/StartPlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#34034a"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/StartPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play" />
+
+        <TextView
+            android:id="@+id/StartPlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Sharing"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/StartExploreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#ECF0F1"
+        android:gravity="center"
+        android:layout_weight="0.5" >
+			<ImageView
+            android:id="@+id/StartExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/explore" />
+
+        <TextView
+            android:id="@+id/StartExploreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Recieving"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#34034a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />	
+    </LinearLayout>
+
+</LinearLayout>

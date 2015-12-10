@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a064f"
+    android:orientation="vertical" >
+    
+    <VideoView
+        android:id="@+id/videoScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.8" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:id="@+id/ControlLayout"
+        android:gravity="center" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+       
+            android:paddingBottom="8sp"
+            android:paddingTop="5sp"
+            android:progress="5"
+            android:progressDrawable="@drawable/seeker_color"
+            android:secondaryProgress="50"
+            android:thumb="@drawable/seeker_thumb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#3a064f"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:src="@drawable/play_previous" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton1"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:background="#3a064f"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:src="@drawable/pause_music" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:background="#3a064f"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:src="@drawable/play_next" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
